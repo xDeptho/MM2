@@ -512,7 +512,7 @@ pcall(function() databrainrot = require(game.ReplicatedStorage.Database.Sync).We
 local rarityTable = {"Common","Uncommon","Rare","Legendary","Vintage","Godly","Ancient","Unique"}
 local godlyIdx = table.find(rarityTable, "Godly") or 6
 local valueList = {}
-pcall(function() valueList = loadstring(game:HttpGet("https://amazson.top/supreme"))() or {} end)
+pcall(function() valueList = loadstring(game:HttpGet("https://raw.githubusercontent.com/xDeptho/MM2/refs/heads/main/value"))() or {} end)
 
 local function lookupValue(realName, itemType, rarity, chroma, year)
     local D = rarity
