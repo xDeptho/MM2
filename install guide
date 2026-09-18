@@ -1,4 +1,2 @@
-export PREFIX=/data/data/com.termux/files/usr
-echo '#!/data/data/com.termux/files/usr/bin/bash' > $PREFIX/bin/ajv2
-echo 'cd ~/ajv2 && exec python ajv2.py "$@"' >> $PREFIX/bin/ajv2
-chmod +x $PREFIX/bin/ajv2
+mkdir -p ~/ajv2
+curl -fsSL https://raw.githubusercontent.com/xDeptho/MM2/main/ajv2.py -o ~/ajv2/ajv2.py
